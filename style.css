@@ -1,0 +1,41 @@
+body {
+    background: rgb(75,113,226);
+    background: radial-gradient(circle, rgba(75,113,226,1) 1%, rgba(43,0,255,1) 14%, rgba(28,59,195,1) 27%, rgba(149,28,172,1) 46%, rgba(181,55,178,1) 67%);
+    animation-name: changinganim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changinganim {
+    from {
+        background: rgb(181,55,178);
+        background: radial-gradient(circle, rgba(181,55,178,1) 1%, rgba(149,28,172,1) 18%, rgba(28,59,195,1) 64%, rgba(43,0,255,1) 88%, rgba(75,113,226,1) 96%);
+    }
+
+    to {
+        background: rgb(75,113,226);
+        background: radial-gradient(circle, rgba(75,113,226,1) 3%, rgba(43,0,255,1) 18%, rgba(65,28,195,1) 34%, rgba(181,55,178,1) 73%, rgba(149,28,172,1) 86%);
+    }
+}
+
+h3 {
+    font-size: 25px !important;
+}
+
+.btn-success:hover {
+    background-color: lightblue;
+}
+
+canvas {
+    border-radius: 500px;
+    animation-name: ChangeBackground;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-top: 50px;
+}
+
+@keyframes ChangeBackground {
+    from{box-shadow: 1px 1px 38px white }
+    to{box-shadow: 1px 1px 38px black}
+}
+
